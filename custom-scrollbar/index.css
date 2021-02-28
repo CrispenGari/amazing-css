@@ -1,0 +1,20 @@
+p {
+  height: 70px;
+  overflow-y: scroll;
+}
+
+p::-webkit-scrollbar {
+  width: 8px;
+}
+
+p::-webkit-scrollbar-track {
+  background: #1e3f20;
+  border-radius: 12px;
+}
+
+p::-webkit-scrollbar-thumb {
+  background: #4a7856;
+  border-radius: 12px;
+}
+
+/* REFER TO W3SCHOOLS */

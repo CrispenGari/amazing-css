@@ -1,0 +1,24 @@
+.message {
+  position: relative;
+  background: white;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  color: black;
+  border-radius: 5px;
+  max-width: 60%;
+}
+.message:before,
+.message:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 19px;
+  border: 11px solid transparent;
+  border-bottom-color: #dddddd;
+}
+.message:after {
+  left: 20px;
+  border: 10px solid transparent;
+  border-bottom-color: #ffffff;
+}

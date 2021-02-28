@@ -1,0 +1,22 @@
+.vertical-snap {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+  width: calc(180px + 1rem);
+  padding: 1rem;
+  height: 480px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+}
+
+.vertical-snap > a {
+  scroll-snap-align: center;
+}
+
+.vertical-snap img {
+  width: 180px;
+  object-fit: contain;
+  border-radius: 1rem;
+}

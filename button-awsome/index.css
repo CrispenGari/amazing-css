@@ -1,0 +1,36 @@
+.button {
+  background-color: #141414;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 5px 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.button:before,
+.button:after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.button:before {
+  border-top: 2px solid lightseagreen;
+  right: 0;
+  top: -4px;
+}
+
+.button:after {
+  border-bottom: 2px solid lightseagreen;
+  bottom: -4px;
+  left: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.truncate {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.4;
+  width: 400px;
+  background: #f5f6f9;
+  color: #333;
+}
+
+.truncate:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 36.4px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #f5f6f9 50%);
+}
