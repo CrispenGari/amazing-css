@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 10px;
+  position: relative
+    /* an important property especially when we are moving the box around. */;
+  animation-name: move /* This is the animation name.*/;
+  animation-delay: 1s; /* How long does the animation takes before start*/
+  animation-fill-mode: forwards; /* The box will not move back to the original position */
+  animation-iteration-count: 2
+    /* How many times to run the animation {infinite means run forever} */;
+  animation-duration: 2s /* how long does the animation takes*/;
+  animation-timing-function: ease-in; /*This defines the speed of the animation
+  linear : constant speed;
+  ease-in: start fast;
+  ease-out: start slow;
+  ease-in-out: start fast then slow
+  .....
+  */
+  animation-direction: alternate-reverse
+    /*
+  reverse means the animation should reverse
+  ....
+  */;
+}
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 20px;
+    right: 20px;
+  }
+  100% {
+    left: 30px;
+    right: 30px;
+  }
+}
