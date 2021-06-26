@@ -10,7 +10,4 @@ div.section-a,
 .section-b {
   width: 100%;
   height: 100vh;
-  background-image: url(./react\ native\ final\ file.jpg);
-  background-color: green;
-  background-blend-mode: multiply;
 }
