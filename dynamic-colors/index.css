@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+h1 {
+  position: fixed;
+  mix-blend-mode: difference;
+  top: 0;
+  color: red;
+}
+.box {
+  width: 20%;
+  background-color: white;
+  height: 100vw;
+  margin-top: 300px;
+}
