@@ -1,4 +1,4 @@
-.vertical-snap {
+.horizontal-snap {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
@@ -8,14 +8,15 @@
   height: 480px;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
+  display: flex;
+  scroll-snap-type: x mandatory;
 }
 
-.vertical-snap > a {
+.horizontal-snap > a {
   scroll-snap-align: center;
 }
 
-.vertical-snap img {
+.horizontal-snap img {
   width: 180px;
   object-fit: contain;
   border-radius: 1rem;
